@@ -1,0 +1,143 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    nav{
+        width: 100%;
+        height: 15%;
+        display: flex;
+        
+        div.BgColor{
+            width: 40%;
+            height: 100%;
+            background-color: #f49521;
+            border-top-right-radius: 90px;
+
+        }
+        .LogoContainer{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        img{
+            width: 100px;
+            height: 90px;
+            margin: 8px 30px 8px 8px;
+        }
+    }
+    main{
+        width: 100%;
+        height: 85vh;
+        display: flex;
+        flex-direction: row;
+        .WelcomeTxt{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+            color: #f4f4f4;
+            background-color: #f49521;
+            padding-top: 80px;
+            h1{
+                font-size: 62px;
+                margin-bottom: 20px;
+            }
+            h1, h3{
+                background-color: transparent;
+            }
+        }
+        .AuthContainer{
+            display: flex;
+            width: 60%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            .AuthWrapper{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 60%;
+                align-items: center;
+                .SocialLogin{
+                    display: flex;
+                    flex-direction: column;
+                    .LoginTxt{
+                        font-size: 25px;
+                        line-height: 90px;
+                    }
+                    .LoginSocialLinks{
+                        display: flex;
+                        justify-content: space-around;
+                        img{
+                            width: 40px;
+                            height: 40px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .DivideLogin{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 15px ;
+                    .dimLine{
+                        width: 100px;
+                        height: 1px;
+                        margin: 10px 10px 0 10px;
+                        background-color: #333;
+                    }
+                }
+                .AuthLogin{
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: 20px;
+                    justify-content: center;
+                    align-items: center;
+                    form{
+                        display: flex;
+                        flex-direction: column;
+                        .FrmGrp{
+                            display: flex;
+                            flex-direction: column;
+                            margin: 10px 0;
+                            label{
+                                font-size: 14px;
+                            }
+                            input{
+                                width: 250px;
+                                height: 30px;
+                                border: 2px solid #f49521;
+                                // outline: none;
+                                border-radius: 5px;
+                                padding: 5px;
+                            }
+                        }
+                        button{
+                            margin: 10px 0;
+                            width: 250px;
+                            height: 30px;
+                            border: 2px solid #f49521;
+                            background-color: #f49521;
+                            border-radius: 5px;
+                            color: #f4f4f4;
+                        }
+                    }
+                }
+                .CreateAccount{
+                    font-size: 15px;
+                    margin: 5px 0;
+                    padding: 5px;
+                    span:hover{
+                        border-bottom: 2px solid #000000 ;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

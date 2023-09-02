@@ -1,0 +1,242 @@
+.Subscription {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .SubHeader {
+    width: 100%;
+    height: 15%;
+
+    .navLinks {
+      padding: 10px 20px;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .Logo {
+        height: 100%;
+        width: 95px;
+      }
+
+      .navBar {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div {
+          margin-right: 50px;
+          padding: 8px;
+          font-size: 20px;
+          cursor: pointer;
+
+          &:hover {
+            border-bottom: 3px solid #f49521;
+          }
+        }
+      }
+    }
+  }
+
+  .SubMain {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+
+    .SubMainTxt {
+      width: 100%;
+      height: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .TitleTxt {
+        color: #f49521;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .CaptionTxt {
+        color: #000;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .SubPlanCards {
+      display: flex;
+      width: 100%;
+      height: 80%;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 200px;
+      .GoldCard {
+        display: flex;
+        height: 90%;
+        width: 30%;
+        flex-direction: column;
+        border: 2px solid #f49521;
+        border-radius: 15px;
+        .GoldHead {
+          border-radius: 16px 16px 0px 0px;
+          background: rgba(255, 140, 5, 0.24);
+          height: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .GoldHeadChild{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: #110900;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              &:nth-child(2){
+                font-size: 20px;
+              }
+            }
+          }
+          div,
+          span {
+            background-color: transparent;
+          }
+        }
+        .GoldContent{
+          display: flex;
+          flex-direction: column;
+          padding: 5px 10px;
+          height: 70%;
+          .GContentTxt{
+            margin: 15px;
+          }
+          .GoldAccess{
+            margin: 15px;
+            h4{
+              font-size: 16px;
+            }
+            .FeaturesGold{
+              .GoldItem{
+                display: flex;
+                img{
+                  width: 25px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+          .ButtonWrapper{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+              width: 90%;
+              height: 100%;
+              background-color: #f49521;
+              border-radius: 7.5px;
+              border: 2px solid #f49521;
+              cursor: pointer;
+              color: #f4f4f4;
+              font-weight: 666;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .PreCard {
+        display: flex;
+        height: 90%;
+        width: 30%;
+        flex-direction: column;
+        border: 3px solid #f49521;
+        border-radius: 15px;
+        .PreRec{
+          height: 8%;
+          background-color: #f49521;
+          color: #f4f4f4;
+          text-align: center;
+          font-style: italic;
+          font-size: 20px;
+        }
+        .PreHead {
+          background: rgba(255, 140, 5, 0.24);
+          height: 22%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .PreHeadChild{
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            span {
+              color: #110900;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+              &:nth-child(2){
+                font-size: 20px;
+              }
+            }
+          }
+          div,
+          span {
+            background-color: transparent;
+          }
+        }
+        .PreContent{
+          display: flex;
+          flex-direction: column;
+          padding: 5px 10px;
+          height: 70%;
+          .PContentTxt{
+            margin: 15px;
+          }
+          .PreAccess{
+            margin: 15px;
+            h4{
+              font-size: 16px;
+            }
+            .FeaturesPre{
+              .PreItem{
+                display: flex;
+                img{
+                  width: 25px;
+                  height: 20px;
+                }
+              }
+            }
+          }
+          .ButtonWrapper{
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            button{
+              width: 90%;
+              height: 100%;
+              background-color: #f49521;
+              border-radius: 7.5px;
+              border: 2px solid #f49521;
+              cursor: pointer;
+              color: #f4f4f4;
+              font-weight: 666;
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,306 @@
+.HomePage {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  .HomeHeader {
+    width: 100%;
+    height: 15vh;
+    .navLinks {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      .Logo {
+        margin: 8px;
+        height: 100px;
+        width: 100px;
+      }
+      .navBar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div {
+          margin-right: 50px;
+          padding: 8px;
+          font-size: 20px;
+          cursor: pointer;
+          &.aboutNavLink:hover {
+            border-bottom: 3px solid #f49521;
+          }
+          &.signupNavLink {
+            border: 2.3px solid #f49521;
+            border-radius: 8px;
+            transition: all .2s ease-in-out;
+            &:hover {
+              color: #f4f4f4;
+              background-color: #f49521;
+              font-weight: bold;
+            }
+          }
+          &.loginNavLink{
+            color: #f4f4f4;
+            background-color: #f49521;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: all .2s ease-in-out;
+            padding: 10px;
+            &:hover{
+              border: 2.3px solid #f49521;
+              background-color: #f4f4f4;
+              color:#333;
+              font-weight: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+  .Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .Intro {
+      display: flex;
+      width: 100%;
+      height: 85vh;
+      .IntroInfo {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 105px;
+        .WelcomeTxt {
+          font-size: 48px;
+        }
+        .CompanyName {
+          font-size: 64px;
+        }
+        .IntroDes {
+          color: rgb(0, 0, 0);
+          letter-spacing: 3.8px;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 28.6px;
+        }
+      }
+      .IntroImgContainer {
+        width: 60%;
+      }
+    }
+    .IllusSearchContainer{
+      width: 100%;
+      height: 40vh;
+      display: flex;  
+      .IllustrationContainer{
+        width:40%;
+        .IllustrationImg{
+          margin-left: 80px;
+          width: 300px;
+          height: 90%;
+          background-color: transparent;
+        }
+      }
+      .SearchBarContainer{
+        width: 60%;
+        display: flex;
+        align-items: center;
+        .SearchBarWrapper{
+          display: flex;
+          form{
+            display: flex;
+            input{
+              height: 61px;
+              width: 400px;
+              border: none;
+              border-radius: 15px 0 0 15px;
+              outline: none;
+              font-size: 20px;
+              padding: 10px;
+              background-color: #ffffff;
+              ::placeholder{
+                font-size: 30px;
+              }
+            }
+            button{
+              width: 61px;
+              height: 61px;
+              color: transparent;
+              background: url('../../assets/Group\ 52.svg');
+              outline: none;
+              border: none;
+              border-radius: 0 15px 15px 0;
+            }
+          }
+        }
+      }
+    }
+    .ServicesContainer{
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .ServicesTxt{
+        font-size: 40px;
+        font-weight: 999;
+        margin: 20px 20px 40px 60px;
+        overflow: hidden;
+      }
+      .ServicesListContainer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        background-color: #E8EBED;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 20px;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        div,img{
+          background-color: transparent;
+        }
+        .serviceChild{
+          flex: 0 0 auto;
+          width: 300px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+          &:hover{
+            transform: scale(1.3);
+          }
+          div{
+            font-size: 20px;
+            font-weight: 999;
+            margin: 10px;
+          }
+        }
+      }
+    }
+    .WhyUsContainer{
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+      .WhyUsTxt{
+        font-size: 40px;
+        font-weight: 999;
+        margin: 20px 20px 40px 60px;
+      }
+      .WhyUsList{
+        display: flex;
+        height: 60%;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px;
+        margin: auto;
+        border-radius: 20px;
+        width: 90%;
+        justify-content: space-between;
+        &::-webkit-scrollbar{
+          display: none;
+        }
+        div,img,i{
+          background-color: transparent;
+        }
+        .whyUsChild{
+          flex: 0 0 auto;
+          width: 33.33%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          transition: all .3s ease-in-out;
+          &:hover{
+            transform: scale(1.3);
+          }
+          div{
+            font-size: 20px;
+            font-weight: 999;
+            margin: 10px;
+          }
+          i{
+            width: 300px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .Footer{
+    background-color: #f49521;
+    display: flex;
+    flex-direction: column;
+    div,b,p,img{
+      background-color: transparent;
+    }
+    .FootLinks{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .ContactLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 20px;
+        font-size: 20px;
+        color:#f4f4f4;
+      }
+      .QuickLinks{
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        div{
+          margin: 10px;
+          color: white;
+          cursor: pointer;
+          &:hover{
+            border-bottom: 2px solid white;
+          }
+        }
+      }
+      .LocationLinks{
+        display: flex;
+        flex-direction: column;
+        div{
+          font-size: 20px;
+          color: #f4f4f4;
+          margin: 20px 20px 10px 20px;
+        }
+        img{
+          width: 500px;
+          height: 300px;
+          margin: 20px 40px 20px 20px ;
+          border-radius: 15px;
+        }
+      }
+    }
+    .SocialLinks{
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img{
+        margin: 20px;
+        transition: all .2s ease;
+        &:hover{
+          transform: translateY(-20px);
+        }
+      }
+    }
+    .Promote{
+      color: white;
+      text-align: right;
+      margin: 10px;
+    }
+  }
+}

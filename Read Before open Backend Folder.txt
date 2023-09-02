@@ -1,0 +1,58 @@
+SOFTWARE INSTALL IN YOUR PC :
+
+1. Python latest version    ( programming language)    ### WARNING IN INSTALLATION 1st PAGE THERE IS OPTION ADD TO PATH plz check mark it 
+
+2.Postgre SQL latest version   ( Postgre SQL is DATABASE)    ####(WARNING IN INSTALLATION set the password as root)
+	AFTER SUCCESSFULLY INSTALL
+	press windows and search psql and hit enter its open the terminal
+	in psql hit enter while its ask password when password occurs type root and hit enter
+	then 
+	its look like (#postgres)
+	write commands: 
+	
+	i. CREATE DATABASE users;
+	ii. CREATE DATABASE products;
+	
+	after this close psql terminal
+
+AFTER INSTALLATION
+
+right click of backend folder and click on OPEN IN TERMINAL
+then in TERMINAL type below given:
+
+1. pip install -r requirements.txt
+
+after successfully obtained 
+
+
+3. python manage.py makemigrations
+
+4. python manage.py migrate --database=users
+5. python manage.py migrate users --database=users
+6. python manage.py migrate products --database=products
+7. python manage.py createsuperuser --database=users
+8. Enter your email and hit enter then name, phone_no, password, re_password then hit enter
+9. to proceed with password enter y then hit enter  (optional if asked in terminal)
+10. its show successfully created 
+11. python manage.py runserver
+
+
+
+
+THEN OPEN THE BROWSER IN URL BAR
+127.0.0.1:8000/admin   [HIT ENTER]
+enter the email is given 
+enter the password is given
+
+u see the database management by admin site
+
+
+
+
+
+
+
+
+
+
+_________________________SORRY FOR INCONVINENCE_________________________________________
